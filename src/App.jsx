@@ -9,7 +9,7 @@ import BleedForIt from './pages/albums/bleedforit/BleedForIt'
 
 const App = () => {
   return (
-    <BrowserRouter basename='/feverglass-website'>
+    <HashRouter basename='/feverglass-website'>
       <Routes>
         <Route path='' element={<Home />}> </Route>
         <Route path='home' element={<Home />}>  </Route>
@@ -20,7 +20,7 @@ const App = () => {
         <Route path='bleedforit' element={<BleedForIt />}> </Route>
         <Route path='' element={null}> </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 export default App
