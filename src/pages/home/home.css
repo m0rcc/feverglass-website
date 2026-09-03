@@ -104,6 +104,8 @@ img { width: 100%; }
 }
 
 .album button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
     background: rgba(0, 0, 0, 0.35);
     margin-top: 4.5dvh;
     padding: 2dvh 4dvw;
