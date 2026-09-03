@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../albums.css'
 
 import discography_cover_sample from '../../../assets/images/main/album-cover-sample-2.jpg'
