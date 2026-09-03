@@ -1,7 +1,7 @@
 {
   "name": "feverglass-website",
   "private": true,
-  "homepage": "http://m0rcc.github.io/feverglass-website",
+  "homepage": "https://m0rcc.github.io/feverglass-website/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
