@@ -15,7 +15,7 @@ const Discography = () => {
         <div className='discography-container'>
           <div id='discography-cover'>
             <div id='discography-image'> 
-              <a href="bleedforit">
+              <a href="#/bleedforit">
                  <img src={discography_cover_sample} alt="" />
               </a>
             </div>
@@ -34,7 +34,7 @@ const Discography = () => {
         <div className='discography-container' id='hidden-discography'>
           <div id='discography-cover'>
             <div id='discography-image'> 
-              <a href="bleedforit">
+              <a href="">
                  <img src={discography_cover_sample} alt="" />
               </a>
             </div>
@@ -53,7 +53,7 @@ const Discography = () => {
         <div className='discography-container' id='hidden-discography'>
           <div id='discography-cover'>
             <div id='discography-image'> 
-              <a href="dearhandsome">
+              <a href="">
                  <img src={discography_cover_sample} alt="" />
               </a>
             </div>

@@ -11,14 +11,13 @@ const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path='' element={<Home />}> </Route>
-        <Route path='home' element={<Home />}>  </Route>
-        <Route path='discography' element={<Discography />}>  </Route>
-        <Route path='schedules' element={<Schedules />}>  </Route>
+        <Route path='/' element={<Home />}> </Route>
+        <Route path='/home' element={<Home />}>  </Route>
+        <Route path='/discography' element={<Discography />}>  </Route>
+        <Route path='/schedules' element={<Schedules />}>  </Route>
 
         { /* DISCOGRAPHY */ }
-        <Route path='bleedforit' element={<BleedForIt />}> </Route>
-        <Route path='' element={null}> </Route>
+        <Route path='/bleedforit' element={<BleedForIt />}> </Route>
       </Routes>
     </HashRouter>
   )

@@ -32,7 +32,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>Petrichor</a>
+            <a href='#/bleedforit' id='song-title'>Petrichor</a>
             <a id='song-length'>5:10</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -47,7 +47,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -62,7 +62,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -77,7 +77,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -92,7 +92,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -107,7 +107,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
@@ -122,7 +122,7 @@ const BleedForIt = () => {
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <a href='' id='song-title'>???</a>
+            <a href='#/bleedforit' id='song-title'>???</a>
             <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
