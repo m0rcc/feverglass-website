@@ -428,6 +428,68 @@ img { width: 100%; }
     }
 }
 
+#submission-alert {
+    position: fixed;
+    justify-self: center;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: -1;
+    opacity: 0;
+}
+
+#submission-alert::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: black;
+    opacity: .5;
+}
+
+#submission-alert div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 30dvw;
+    align-items: center;
+    background-color: black;
+    padding: 2rem 1rem;
+    border: .1rem solid white;
+    z-index: 3;
+}
+
+#submission-alert div h3 {
+    margin: 0;
+}
+
+#submission-alert div a {
+    font-size: large;
+}
+
+#submission-alert #submission-exit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 10rem;
+
+    margin-top: .5rem;
+    padding: .5rem 0;
+
+    background-color: maroon;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
 /* ANIMATIONS */
 .album button {
     transition: .2s all;

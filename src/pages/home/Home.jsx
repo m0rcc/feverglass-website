@@ -20,6 +20,10 @@ import rain_background from '../../assets/images/main/rain-bg.mp4'
 
 const Home = () => {
     const imageCoasterSequence = [sample, sample2];
+
+    const submissionButton = document.getElementById("submission-button");
+    const submissionPage = document.getElementById("submission-alert");
+
     let sequenceNumber = 0;
     let imageBackgroundRef = useRef(null);
 
@@ -45,6 +49,15 @@ const Home = () => {
         }
     }
 
+    const onExitSubmission = () => {
+        if (submissionPage.style.opacity == 1) {
+            submissionPage.style.opacity = 0;
+            submissionPage.style.zIndex = -1;
+        } else {
+            return;
+        }
+    }
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -57,6 +70,9 @@ const Home = () => {
 
   const handleSubmit = async (args) => {
     args.preventDefault();
+
+    submissionButton.style.pointerEvents = "none";
+    submissionButton.style.opacity = 0;
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -74,13 +90,18 @@ const Home = () => {
       console.log("Form submitted:", result);
 
       if (result.success) {
-        alert("Form submitted successfully!");
+        submissionPage.style.opacity = 1;
+        submissionPage.style.zIndex = 100;
       } else {
         alert("Submission failed: " + result.message);
       }
     } catch (err) {
       console.error("Error submitting form:", err);
     }
+
+    submissionButton.style.pointerEvents = "all";
+    submissionButton.style.opacity = 1;
+
   };
 
   return (
@@ -273,7 +294,16 @@ const Home = () => {
             </div>
         </section>
 
+        <div id='submission-alert'>
+            <div>
+                <h3> Message Sent!</h3>
+                <a> Your message will be reviewed within 48 hours. </a>
+                <button id="submission-exit-button" onClick={onExitSubmission}> EXIT </button>
+            </div>
+        </div>
+
         <section className='credentials'>
+
             <div className='container' id='contacts'>
                 <h3> Contact Us! </h3>
                 <a> <b>Email: </b> feverglass@gmail.com </a>
@@ -311,7 +341,7 @@ const Home = () => {
                     required
                 >
                 </textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" id='submission-button'>Submit</button>
                 </form>
             </div>
         </section>
