@@ -53,6 +53,8 @@ const Home = () => {
         if (submissionPage.style.opacity == 1) {
             submissionPage.style.opacity = 0;
             submissionPage.style.zIndex = -1;
+
+            window.location.reload();
         } else {
             return;
         }
