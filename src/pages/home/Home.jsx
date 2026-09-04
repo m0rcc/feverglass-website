@@ -8,7 +8,6 @@ import sample from '../../assets/images/band/main-band.png'
 import sample2 from '../../assets/images/band/band-picture-2.jpg'
 
 /* BAND MEMBERS */
-import jonathan_profile from '../../assets/images/members/jonathan.png'
 import benni_profile from '../../assets/images/members/benni_profile.jpg'
 import daniel_profile from '../../assets/images/members/daniel_profile.jpg'
 import enzo_profile from '../../assets/images/members/enzo_profile.jpg'
