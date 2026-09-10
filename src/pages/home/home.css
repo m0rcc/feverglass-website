@@ -288,7 +288,7 @@ img { width: 100%; }
 .members #musicians {
     display: flex;
     margin: 0 auto;
-    padding: 0 clamp(0.5rem, 0.211rem + 1.45vw, 2rem);
+    padding: 0 clamp(1rem, 0.229rem + 3.86vw, 5rem);
     gap: .5rem;
 }
 
@@ -297,6 +297,8 @@ img { width: 100%; }
     border: clamp(0.05rem, 0.04rem + 0.05vw, 0.1rem) solid #fff;
     box-shadow: 0 0 .25rem .05rem rgb(255, 255, 255);
     z-index: 2;
+
+    transform: skewX(-5deg);
 }
 
 
@@ -531,10 +533,14 @@ body:has(#image-carousel:hover) #right-button {
 .members #musicians > div:hover {
     z-index: 1000;
     box-shadow: 0 0 .25rem .1rem rgb(255, 255, 255);
-    transform: translateY(-.5rem);
+    transform: translateY(-.5rem) skewX(-5deg);
 }
 
 @media (max-width: 1280px) {
+    .members #musicians > div {
+        transform: scale(1.01) skewX(0deg);
+    }
+
     .members #musicians > div:hover {
         transform: scale(1.01);
     }

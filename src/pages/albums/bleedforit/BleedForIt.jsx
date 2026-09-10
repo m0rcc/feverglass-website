@@ -28,13 +28,13 @@ const BleedForIt = () => {
 
       <section className='songs-list'>
         <h2>SONGS</h2>
-        <div id='song-info'>
+        <div id='song-info' className='hidden-song'>
           <div id='song-image'>
             <img src={discography_cover_sample} alt="" />
           </div>
           <div id='song-description'>
-            <Link to="/bleedforit" id='song-title'>Petrichor</Link>
-            <a id='song-length'>5:10</a>
+            <Link to="/bleedforit" id='song-title'>???</Link>
+            <a id='song-length'>X:XX</a>
             <div id='song-links'>
               <a className="fa-brands fa-youtube"></a>
               <a className="fa-brands fa-spotify"></a>
