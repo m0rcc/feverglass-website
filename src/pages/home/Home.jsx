@@ -21,7 +21,7 @@ import rain_background from '../../assets/images/main/rain-bg.mp4'
 
 const Home = () => {
     const handleNavigate = useNavigate();
-    
+
     const handlePreOrderClick = (e) => {
         handleNavigate('/bleedforit');
     }
@@ -129,7 +129,7 @@ const Home = () => {
             <h2 id='latest-album'> LATEST ALBUM </h2>
             <h1 id='album-title'> BLEEDFORIT </h1>
             <h2 id='album-subtitle'> IT'S SOON... </h2>
-            <button id='pre-order-button' onClick={handlePreOrderClick}> PRE-ORDER </button>
+            <button id='pre-order-button' onClick={handlePreOrderClick}> VIEW </button>
         </section>
 
         <section className='info'>
