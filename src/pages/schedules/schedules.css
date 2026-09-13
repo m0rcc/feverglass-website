@@ -12,7 +12,7 @@ section { margin: 0; width: 100%; }
     display: flex;
     justify-content: center;
     align-items: center;
-    height: clamp(10rem, 9.036rem + 4.82vw, 15rem);
+    height: clamp(9rem, 8.325rem + 3.37vw, 12.5rem);
     width: auto;
     text-align: center;
     margin-top: 15dvh;
@@ -73,7 +73,7 @@ section { margin: 0; width: 100%; }
 }
 
 .schedules-content #schedule-template #schedule-date {
-    flex: .35;
+    flex: .2;
 }
 
 .schedules-content #schedule-template #schedule-info {
@@ -110,6 +110,7 @@ section { margin: 0; width: 100%; }
 
 #schedule-date h2 {
     margin: 0;
+    font-size: clamp(1.75rem, 1.654rem + 0.48vw, 2.25rem);
     margin-top: .5rem;
 }
 
