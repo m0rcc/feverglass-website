@@ -1,4 +1,5 @@
 import { React, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import Navigation from '../../templates/navigation/Navigation'
 import './home.css'
@@ -19,8 +20,14 @@ import nice_profile from '../../assets/images/members/nice_profile.jpg'
 import rain_background from '../../assets/images/main/rain-bg.mp4'
 
 const Home = () => {
-    const imageCoasterSequence = [sample, sample2];
+    const preOrderButton = document.getElementById("pre-order-button")
 
+    const handlePreOrderClick = (e) => {
+        const handleNavigate = useNavigate();
+        handleNavigate('/bleedforit');
+    }
+
+    const imageCoasterSequence = [sample, sample2];
     const submissionButton = document.getElementById("submission-button");
     const submissionPage = document.getElementById("submission-alert");
 
@@ -123,7 +130,7 @@ const Home = () => {
             <h2 id='latest-album'> LATEST ALBUM </h2>
             <h1 id='album-title'> BLEEDFORIT </h1>
             <h2 id='album-subtitle'> IT'S SOON... </h2>
-            <button> PRE-ORDER </button>
+            <button id='pre-order-button' onClick={handlePreOrderClick}> PRE-ORDER </button>
         </section>
 
         <section className='info'>
