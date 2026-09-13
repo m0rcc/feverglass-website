@@ -20,10 +20,9 @@ import nice_profile from '../../assets/images/members/nice_profile.jpg'
 import rain_background from '../../assets/images/main/rain-bg.mp4'
 
 const Home = () => {
-    const preOrderButton = document.getElementById("pre-order-button")
-
+    const handleNavigate = useNavigate();
+    
     const handlePreOrderClick = (e) => {
-        const handleNavigate = useNavigate();
         handleNavigate('/bleedforit');
     }
 
