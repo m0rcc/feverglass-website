@@ -174,7 +174,6 @@ const Home = () => {
         </section>
         
         <section className='members'>
-
             <h2 className='subtitle'> THE MANAGER </h2>
             <div id='manager'>
                 <div className='container' id='left-side'>
